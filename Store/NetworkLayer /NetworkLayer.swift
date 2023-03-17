@@ -12,5 +12,4 @@ protocol NetworkLayerProtocol {
 }
 
 class NetworkLayer: NetworkLayerProtocol{
-    
 }

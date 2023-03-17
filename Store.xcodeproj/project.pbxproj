@@ -26,6 +26,8 @@
 		8AB8AFEF29C4772900E66F05 /* BuilderModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB8AFEE29C4772900E66F05 /* BuilderModels.swift */; };
 		8AB8AFF129C4775300E66F05 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB8AFF029C4775300E66F05 /* Router.swift */; };
 		8AB8AFF329C4778B00E66F05 /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB8AFF229C4778B00E66F05 /* NetworkLayer.swift */; };
+		8AB8AFF529C4874F00E66F05 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB8AFF429C4874F00E66F05 /* Currency.swift */; };
+		8AB8AFF729C48B3500E66F05 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB8AFF629C48B3500E66F05 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		8AB8AFEE29C4772900E66F05 /* BuilderModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderModels.swift; sourceTree = "<group>"; };
 		8AB8AFF029C4775300E66F05 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		8AB8AFF229C4778B00E66F05 /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
+		8AB8AFF429C4874F00E66F05 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		8AB8AFF629C48B3500E66F05 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,7 @@
 		8AB8AFCB29C46EDE00E66F05 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8AB8AFF629C48B3500E66F05 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -230,6 +235,7 @@
 		8AB8AFED29C475EC00E66F05 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				8AB8AFF429C4874F00E66F05 /* Currency.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -304,6 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AB8AFF529C4874F00E66F05 /* Currency.swift in Sources */,
 				8AB8AFF329C4778B00E66F05 /* NetworkLayer.swift in Sources */,
 				8AB8AFE629C4758300E66F05 /* LoginPresenter.swift in Sources */,
 				8AB8AFD329C4732900E66F05 /* SignInPage.swift in Sources */,
@@ -321,6 +328,7 @@
 				8AB8AFEC29C475D500E66F05 /* Page2Presenter.swift in Sources */,
 				8AB8AFE029C4740D00E66F05 /* Page2.swift in Sources */,
 				8AB8AFE829C475A400E66F05 /* ProfilePresenter.swift in Sources */,
+				8AB8AFF729C48B3500E66F05 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

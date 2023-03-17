@@ -22,7 +22,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let navigationControler = UINavigationController()
         let builder = BuilderModels()
         let router = Router(navigationControler: navigationControler,builder: builder)
-        router.initalLogin()
+       // router.initalLogin()
+       router.initalSignIn()
+       
         window?.rootViewController = navigationControler
         window?.makeKeyAndVisible()
     }

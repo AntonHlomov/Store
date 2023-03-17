@@ -14,6 +14,8 @@ protocol RouterAssembly{
 }
 protocol RouterProtocol: RouterAssembly {
     func initalLogin()
+    func initalSignIn()
+    func showProfileModule(user: User?)
 }
 class Router: RouterProtocol{
     var navigationControler: UINavigationController?
@@ -28,6 +30,20 @@ class Router: RouterProtocol{
             guard let mainViewControler = builder?.createLoginModule(router: self) else {return}
             navigationControler.navigationBar.isHidden = true
             navigationControler.viewControllers = [mainViewControler]
+        }
+    }
+    func initalSignIn() {
+        if let navigationControler = navigationControler{
+            guard let mainViewControler = builder?.createSignInModule(router: self) else {return}
+            navigationControler.navigationBar.isHidden = true
+            navigationControler.viewControllers = [mainViewControler]
+        }
+    }
+    func showProfileModule(user: User?){
+        if let navigationControler = navigationControler{
+            guard let showViewControler =  builder?.createUserProfileModule(router: self, user: user) else {return}
+            navigationControler.navigationBar.isHidden = false
+            navigationControler.pushViewController(showViewControler, animated: true)
         }
     }
     
