@@ -4,7 +4,6 @@
 //
 //  Created by Anton Khlomov on 18/03/2023.
 //
-
 import Foundation
 import UIKit
 
@@ -20,7 +19,6 @@ enum AssetsColor {
     case ButtonTabBarStore
 }
 extension UIColor {
-    
     static func rgb(red: CGFloat, green: CGFloat, blue: CGFloat) -> UIColor {
         return UIColor(red: red/255, green: green/255, blue: blue/255, alpha: 1)
     }
@@ -45,6 +43,5 @@ extension UIColor {
         case .ButtonTabBarStore:
             return  UIColor.rgb(red: 144, green: 144, blue: 144)
         }
-        
     }
 }
