@@ -35,6 +35,7 @@
 		8AB8B00629C49D4D00E66F05 /* MessengerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB8B00529C49D4D00E66F05 /* MessengerPresenter.swift */; };
 		8AB8B00A29C52CFE00E66F05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AB8B00929C52CFE00E66F05 /* Assets.xcassets */; };
 		8AB8B00C29C5387100E66F05 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB8B00B29C5387100E66F05 /* Colors.swift */; };
+		8AB8B00E29C53DD100E66F05 /* AnchoredConstraintsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB8B00D29C53DD100E66F05 /* AnchoredConstraintsExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		8AB8B00529C49D4D00E66F05 /* MessengerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerPresenter.swift; sourceTree = "<group>"; };
 		8AB8B00929C52CFE00E66F05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8AB8B00B29C5387100E66F05 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		8AB8B00D29C53DD100E66F05 /* AnchoredConstraintsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchoredConstraintsExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +256,7 @@
 			children = (
 				8AB8AFF429C4874F00E66F05 /* Currency.swift */,
 				8AB8B00B29C5387100E66F05 /* Colors.swift */,
+				8AB8B00D29C53DD100E66F05 /* AnchoredConstraintsExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 				8AB8AFE829C475A400E66F05 /* ProfilePresenter.swift in Sources */,
 				8AB8AFF729C48B3500E66F05 /* User.swift in Sources */,
 				8AB8AFFE29C49CE000E66F05 /* LikePresenter.swift in Sources */,
+				8AB8B00E29C53DD100E66F05 /* AnchoredConstraintsExtension.swift in Sources */,
 				8AB8AFFC29C49CB400E66F05 /* LikePage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
