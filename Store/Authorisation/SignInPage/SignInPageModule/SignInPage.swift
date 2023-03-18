@@ -12,7 +12,7 @@ class SignInPage: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
+        view.backgroundColor = .darkText
     }
 }
 extension SignInPage: SignInProtocol{

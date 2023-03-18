@@ -12,6 +12,10 @@ protocol BuilderModelsProtocol{
     func createLoginModule(router: RouterProtocol) -> UIViewController
     func createSignInModule(router: RouterProtocol) -> UIViewController
     func createUserProfileModule(router: RouterProtocol,user: User?) -> UIViewController
+    func createPage1Module(router: RouterProtocol,user: User?) -> UIViewController
+    func createMessengerModule(router: RouterProtocol) -> UIViewController
+    func createMarketModule(router: RouterProtocol) -> UIViewController
+    func createLikeModule(router: RouterProtocol) -> UIViewController
     
 }
 class BuilderModels: BuilderModelsProtocol{
@@ -37,5 +41,33 @@ class BuilderModels: BuilderModelsProtocol{
         view.presenter = presenter
         return view
     }
+    func createPage1Module(router: RouterProtocol, user: User?) -> UIViewController {
+        let view = Page1()
+        let networkService = NetworkLayer()
+        let presenter = Page1Presenter(view: view, networkService: networkService, router: router, user: user)
+        view.presenter = presenter
+        return view
+    }
     
+    func createMessengerModule(router: RouterProtocol) -> UIViewController {
+        let view = MessengerPage()
+        let networkServiceRouter = NetworkLayer()
+        let presenter = MessengerPresenter(view: view, networkService: networkServiceRouter, router:router)
+        view.presenter = presenter
+        return view
+    }
+    func createMarketModule(router: RouterProtocol) -> UIViewController {
+        let view = MarketPage()
+        let networkServiceRouter = NetworkLayer()
+        let presenter = MarketPresenter(view: view, networkService: networkServiceRouter, router:router)
+        view.presenter = presenter
+        return view
+    }
+    func createLikeModule(router: RouterProtocol) -> UIViewController {
+        let view = LikePage()
+        let networkServiceRouter = NetworkLayer()
+        let presenter = LikePresenter(view: view, networkService: networkServiceRouter, router:router)
+        view.presenter = presenter
+        return view
+    }
 }

@@ -12,7 +12,7 @@ class Profile: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .green
+        view.backgroundColor = .gray
     }
 }
 extension Profile: ProfileProtocol{
@@ -23,4 +23,5 @@ extension Profile: ProfileProtocol{
     func setBalance(item: Double, currency: Currency) {
         print("setBalance",currency.description)
     }
+
 }

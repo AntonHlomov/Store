@@ -20,11 +20,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
         let navigationControler = UINavigationController()
+        let tabBarControler = UITabBarController()
         let builder = BuilderModels()
-        let router = Router(navigationControler: navigationControler,builder: builder)
+        let router = Router(navigationControler: navigationControler, tabBarControler: tabBarControler,builder: builder)
        // router.initalLogin()
-       router.initalSignIn()
-       
+        //router.initalSignIn()
+        router.initalMainTabControler(user: nil)
         window?.rootViewController = navigationControler
         window?.makeKeyAndVisible()
     }

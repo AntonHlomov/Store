@@ -10,7 +10,6 @@
 		8AB8AFB129C469E100E66F05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB8AFB029C469E100E66F05 /* AppDelegate.swift */; };
 		8AB8AFB329C469E100E66F05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB8AFB229C469E100E66F05 /* SceneDelegate.swift */; };
 		8AB8AFBB29C469E100E66F05 /* Store.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8AB8AFB929C469E100E66F05 /* Store.xcdatamodeld */; };
-		8AB8AFBD29C469E300E66F05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AB8AFBC29C469E300E66F05 /* Assets.xcassets */; };
 		8AB8AFC029C469E300E66F05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AB8AFBE29C469E300E66F05 /* LaunchScreen.storyboard */; };
 		8AB8AFD329C4732900E66F05 /* SignInPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB8AFD229C4732900E66F05 /* SignInPage.swift */; };
 		8AB8AFD529C4733900E66F05 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB8AFD429C4733900E66F05 /* Login.swift */; };
@@ -28,6 +27,14 @@
 		8AB8AFF329C4778B00E66F05 /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB8AFF229C4778B00E66F05 /* NetworkLayer.swift */; };
 		8AB8AFF529C4874F00E66F05 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB8AFF429C4874F00E66F05 /* Currency.swift */; };
 		8AB8AFF729C48B3500E66F05 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB8AFF629C48B3500E66F05 /* User.swift */; };
+		8AB8AFFC29C49CB400E66F05 /* LikePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB8AFFB29C49CB400E66F05 /* LikePage.swift */; };
+		8AB8AFFE29C49CE000E66F05 /* LikePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB8AFFD29C49CE000E66F05 /* LikePresenter.swift */; };
+		8AB8B00029C49CF900E66F05 /* MarketPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB8AFFF29C49CF900E66F05 /* MarketPresenter.swift */; };
+		8AB8B00229C49D1300E66F05 /* MarketPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB8B00129C49D1300E66F05 /* MarketPage.swift */; };
+		8AB8B00429C49D2700E66F05 /* MessengerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB8B00329C49D2700E66F05 /* MessengerPage.swift */; };
+		8AB8B00629C49D4D00E66F05 /* MessengerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB8B00529C49D4D00E66F05 /* MessengerPresenter.swift */; };
+		8AB8B00A29C52CFE00E66F05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AB8B00929C52CFE00E66F05 /* Assets.xcassets */; };
+		8AB8B00C29C5387100E66F05 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB8B00B29C5387100E66F05 /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +42,6 @@
 		8AB8AFB029C469E100E66F05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AB8AFB229C469E100E66F05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8AB8AFBA29C469E100E66F05 /* Store.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Store.xcdatamodel; sourceTree = "<group>"; };
-		8AB8AFBC29C469E300E66F05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8AB8AFBF29C469E300E66F05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8AB8AFC129C469E300E66F05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8AB8AFD229C4732900E66F05 /* SignInPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPage.swift; sourceTree = "<group>"; };
@@ -54,6 +60,14 @@
 		8AB8AFF229C4778B00E66F05 /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
 		8AB8AFF429C4874F00E66F05 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		8AB8AFF629C48B3500E66F05 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8AB8AFFB29C49CB400E66F05 /* LikePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikePage.swift; sourceTree = "<group>"; };
+		8AB8AFFD29C49CE000E66F05 /* LikePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikePresenter.swift; sourceTree = "<group>"; };
+		8AB8AFFF29C49CF900E66F05 /* MarketPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPresenter.swift; sourceTree = "<group>"; };
+		8AB8B00129C49D1300E66F05 /* MarketPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPage.swift; sourceTree = "<group>"; };
+		8AB8B00329C49D2700E66F05 /* MessengerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerPage.swift; sourceTree = "<group>"; };
+		8AB8B00529C49D4D00E66F05 /* MessengerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerPresenter.swift; sourceTree = "<group>"; };
+		8AB8B00929C52CFE00E66F05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8AB8B00B29C5387100E66F05 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,11 +108,14 @@
 				8AB8AFD029C4700400E66F05 /* Page 1 */,
 				8AB8AFD129C4700800E66F05 /* Page 2 */,
 				8AB8AFCB29C46EDE00E66F05 /* Models */,
+				8AB8AFFA29C49C7A00E66F05 /* MessengerModule */,
+				8AB8AFF929C49C2D00E66F05 /* MarketModule */,
+				8AB8AFF829C49C0100E66F05 /* LikeModule */,
 				8AB8AFED29C475EC00E66F05 /* Extension */,
 				8AB8AFB029C469E100E66F05 /* AppDelegate.swift */,
 				8AB8AFB229C469E100E66F05 /* SceneDelegate.swift */,
-				8AB8AFBC29C469E300E66F05 /* Assets.xcassets */,
 				8AB8AFBE29C469E300E66F05 /* LaunchScreen.storyboard */,
+				8AB8B00929C52CFE00E66F05 /* Assets.xcassets */,
 				8AB8AFC129C469E300E66F05 /* Info.plist */,
 				8AB8AFB929C469E100E66F05 /* Store.xcdatamodeld */,
 			);
@@ -236,8 +253,36 @@
 			isa = PBXGroup;
 			children = (
 				8AB8AFF429C4874F00E66F05 /* Currency.swift */,
+				8AB8B00B29C5387100E66F05 /* Colors.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		8AB8AFF829C49C0100E66F05 /* LikeModule */ = {
+			isa = PBXGroup;
+			children = (
+				8AB8AFFB29C49CB400E66F05 /* LikePage.swift */,
+				8AB8AFFD29C49CE000E66F05 /* LikePresenter.swift */,
+			);
+			path = LikeModule;
+			sourceTree = "<group>";
+		};
+		8AB8AFF929C49C2D00E66F05 /* MarketModule */ = {
+			isa = PBXGroup;
+			children = (
+				8AB8AFFF29C49CF900E66F05 /* MarketPresenter.swift */,
+				8AB8B00129C49D1300E66F05 /* MarketPage.swift */,
+			);
+			path = MarketModule;
+			sourceTree = "<group>";
+		};
+		8AB8AFFA29C49C7A00E66F05 /* MessengerModule */ = {
+			isa = PBXGroup;
+			children = (
+				8AB8B00329C49D2700E66F05 /* MessengerPage.swift */,
+				8AB8B00529C49D4D00E66F05 /* MessengerPresenter.swift */,
+			);
+			path = MessengerModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,8 +343,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AB8B00A29C52CFE00E66F05 /* Assets.xcassets in Resources */,
 				8AB8AFC029C469E300E66F05 /* LaunchScreen.storyboard in Resources */,
-				8AB8AFBD29C469E300E66F05 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,21 +359,28 @@
 				8AB8AFF329C4778B00E66F05 /* NetworkLayer.swift in Sources */,
 				8AB8AFE629C4758300E66F05 /* LoginPresenter.swift in Sources */,
 				8AB8AFD329C4732900E66F05 /* SignInPage.swift in Sources */,
+				8AB8B00429C49D2700E66F05 /* MessengerPage.swift in Sources */,
+				8AB8B00029C49CF900E66F05 /* MarketPresenter.swift in Sources */,
 				8AB8AFEA29C475C100E66F05 /* Page1Presenter.swift in Sources */,
 				8AB8AFB129C469E100E66F05 /* AppDelegate.swift in Sources */,
 				8AB8AFE429C4756E00E66F05 /* SignInPresenter.swift in Sources */,
 				8AB8AFD729C4735A00E66F05 /* Profile.swift in Sources */,
 				8AB8AFE229C4746600E66F05 /* ProfileTableCell.swift in Sources */,
+				8AB8B00229C49D1300E66F05 /* MarketPage.swift in Sources */,
 				8AB8AFDE29C473FE00E66F05 /* Page1.swift in Sources */,
 				8AB8AFEF29C4772900E66F05 /* BuilderModels.swift in Sources */,
 				8AB8AFF129C4775300E66F05 /* Router.swift in Sources */,
+				8AB8B00629C49D4D00E66F05 /* MessengerPresenter.swift in Sources */,
 				8AB8AFB329C469E100E66F05 /* SceneDelegate.swift in Sources */,
 				8AB8AFBB29C469E100E66F05 /* Store.xcdatamodeld in Sources */,
 				8AB8AFD529C4733900E66F05 /* Login.swift in Sources */,
 				8AB8AFEC29C475D500E66F05 /* Page2Presenter.swift in Sources */,
 				8AB8AFE029C4740D00E66F05 /* Page2.swift in Sources */,
+				8AB8B00C29C5387100E66F05 /* Colors.swift in Sources */,
 				8AB8AFE829C475A400E66F05 /* ProfilePresenter.swift in Sources */,
 				8AB8AFF729C48B3500E66F05 /* User.swift in Sources */,
+				8AB8AFFE29C49CE000E66F05 /* LikePresenter.swift in Sources */,
+				8AB8AFFC29C49CB400E66F05 /* LikePage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,13 +517,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = J8HRCHW3ZN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Store/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -492,13 +546,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = J8HRCHW3ZN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Store/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
