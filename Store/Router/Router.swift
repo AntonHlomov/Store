@@ -15,6 +15,7 @@ protocol RouterAssembly{
 }
 protocol RouterProtocol: RouterAssembly {
     func initalLogin()
+    func showLogin()
     func initalSignIn()
     func showProfileModule(user: User?)
     func initalMainTabControler(user: User?)
@@ -34,6 +35,13 @@ class Router: RouterProtocol{
             guard let mainViewControler = builder?.createLoginModule(router: self) else {return}
             navigationControler.navigationBar.isHidden = true
             navigationControler.viewControllers = [mainViewControler]
+        }
+    }
+    func showLogin(){
+        if let navigationControler = navigationControler{
+            guard let showViewControler = builder?.createLoginModule(router: self) else {return}
+            navigationControler.navigationBar.isHidden = true
+            navigationControler.pushViewController(showViewControler, animated: true)
         }
     }
     func initalSignIn() {

@@ -8,6 +8,16 @@
 import Foundation
 import UIKit
 
+extension UIImageView {
+    class func logoImage (image: UIImage) -> UIImageView{
+  //    let iv = UIImageView(image: #imageLiteral(resourceName: "icons8-булавка-для-карты-24").withRenderingMode(.alwaysOriginal))
+        let iv = UIImageView(image: image)
+        iv.backgroundColor = .clear
+        iv.contentMode = .scaleAspectFit
+        iv.layer.masksToBounds = true
+        return iv
+    }
+}
 extension UILabel {
     class func headerMiddle (title: String,textAlignment: NSTextAlignment) -> UILabel{
         let text = UILabel()
@@ -66,6 +76,15 @@ extension UIButton{
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
         button.isHidden = invisibility
         
+        return button
+    }
+    
+    class func stringButton(firstText:String,secondText:String,firstColor:UIColor,secondColor:UIColor,contentHorizontalAlignment: UIControl.ContentHorizontalAlignment ) -> UIButton{
+        let button = UIButton(type: .system)
+        let attributedTitle = NSMutableAttributedString(string: firstText, attributes: [.font:UIFont.systemFont (ofSize: 12), .foregroundColor: firstColor ])
+        attributedTitle.append(NSAttributedString(string: secondText, attributes: [.font:UIFont.systemFont (ofSize: 12), .foregroundColor: secondColor ]))
+        button.setAttributedTitle(attributedTitle, for: .normal)
+        button.contentHorizontalAlignment = contentHorizontalAlignment
         return button
     }
 }

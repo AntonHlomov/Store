@@ -16,6 +16,7 @@ enum AssetsColor {
     case WhiteStore
     case FonQuantityStore
     case BalackStore
+    case GrayStore
     case ButtonTabBarStore
     case HeaderColorText
     
@@ -52,6 +53,8 @@ extension UIColor {
             return  UIColor.rgb(red: 232, green: 232, blue: 232)
         case .ColorPlaceholder:
             return  UIColor.rgb(red: 123, green: 123, blue: 123)
+        case .GrayStore:
+            return  UIColor.rgb(red: 128, green: 128, blue: 128)
         }
     }
 }

@@ -15,6 +15,10 @@ protocol SignInPresenterProtocol: AnyObject{
     
     init(view: SignInProtocol, networkService: NetworkLayerProtocol, router: RouterProtocol)
     func setSignInData()
+    func goToMainPage()
+    func goToLogin()
+    func goToLoginGoogle()
+    func goToLoginApple()
 }
 
 class SignInPresenter: SignInPresenterProtocol{
@@ -29,4 +33,18 @@ class SignInPresenter: SignInPresenterProtocol{
         self.networkService = networkService
     }
     func setSignInData(){}
+    func goToMainPage(){
+        self.router?.initalMainTabControler(user: nil)
+    }
+    func goToLogin(){
+        self.router?.showLogin()
+    }
+    func goToLoginGoogle(){
+        print("-->goToLoginGoogle")
+        
+    }
+    func goToLoginApple(){
+        print("-->goToLoginApple")
+        
+    }
 }
