@@ -24,8 +24,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let builder = BuilderModels()
         let router = Router(navigationControler: navigationControler, tabBarControler: tabBarControler,builder: builder)
        // router.initalLogin()
-        //router.initalSignIn()
-        router.initalMainTabControler(user: nil)
+         router.initalSignIn()
+       // router.initalMainTabControler(user: nil)
         window?.rootViewController = navigationControler
         window?.makeKeyAndVisible()
     }

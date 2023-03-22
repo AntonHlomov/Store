@@ -17,6 +17,10 @@ enum AssetsColor {
     case FonQuantityStore
     case BalackStore
     case ButtonTabBarStore
+    case HeaderColorText
+    
+    case FonTextField
+    case ColorPlaceholder
 }
 extension UIColor {
     static func rgb(red: CGFloat, green: CGFloat, blue: CGFloat) -> UIColor {
@@ -35,13 +39,19 @@ extension UIColor {
         case .BlueStore:
             return  UIColor.rgb(red: 143, green: 180, blue: 177)
         case .WhiteStore:
-            return  UIColor.rgb(red: 255, green: 255, blue: 255)
+            return  UIColor.rgb(red: 250, green: 249, blue: 255)
         case .FonQuantityStore:
             return  UIColor.rgb(red: 24, green: 23, blue: 38)
         case .BalackStore:
             return  UIColor.rgb(red: 0, green: 0, blue: 0)
         case .ButtonTabBarStore:
             return  UIColor.rgb(red: 144, green: 144, blue: 144)
+        case .HeaderColorText:
+            return  UIColor.rgb(red: 30, green: 30, blue: 30)
+        case .FonTextField:
+            return  UIColor.rgb(red: 232, green: 232, blue: 232)
+        case .ColorPlaceholder:
+            return  UIColor.rgb(red: 123, green: 123, blue: 123)
         }
     }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A72101A29CA08AE0010398B /* FontSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A72101929CA08AE0010398B /* FontSettings.swift */; };
 		8AB8AFB129C469E100E66F05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB8AFB029C469E100E66F05 /* AppDelegate.swift */; };
 		8AB8AFB329C469E100E66F05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB8AFB229C469E100E66F05 /* SceneDelegate.swift */; };
 		8AB8AFBB29C469E100E66F05 /* Store.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8AB8AFB929C469E100E66F05 /* Store.xcdatamodeld */; };
@@ -39,6 +40,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A72101929CA08AE0010398B /* FontSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSettings.swift; sourceTree = "<group>"; };
 		8AB8AFAD29C469E100E66F05 /* Store.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Store.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AB8AFB029C469E100E66F05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AB8AFB229C469E100E66F05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -257,6 +259,7 @@
 				8AB8AFF429C4874F00E66F05 /* Currency.swift */,
 				8AB8B00B29C5387100E66F05 /* Colors.swift */,
 				8AB8B00D29C53DD100E66F05 /* AnchoredConstraintsExtension.swift */,
+				8A72101929CA08AE0010398B /* FontSettings.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 				8AB8AFF129C4775300E66F05 /* Router.swift in Sources */,
 				8AB8B00629C49D4D00E66F05 /* MessengerPresenter.swift in Sources */,
 				8AB8AFB329C469E100E66F05 /* SceneDelegate.swift in Sources */,
+				8A72101A29CA08AE0010398B /* FontSettings.swift in Sources */,
 				8AB8AFBB29C469E100E66F05 /* Store.xcdatamodeld in Sources */,
 				8AB8AFD529C4733900E66F05 /* Login.swift in Sources */,
 				8AB8AFEC29C475D500E66F05 /* Page2Presenter.swift in Sources */,
