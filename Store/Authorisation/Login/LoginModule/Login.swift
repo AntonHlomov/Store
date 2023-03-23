@@ -66,9 +66,12 @@ class Login: UIViewController {
         if password.isSecureTextEntry {
             password.isSecureTextEntry = false
             eye.setImage( #imageLiteral(resourceName: "eye").withRenderingMode(.alwaysOriginal), for: .normal)
+            password.togglePasswordVisibility()
+           
             } else {
                 password.isSecureTextEntry = true
                 eye.setImage( #imageLiteral(resourceName: "eyeClose").withRenderingMode(.alwaysOriginal), for: .normal)
+                password.togglePasswordVisibility()
             }
     }
     // MARK: - Keyboard

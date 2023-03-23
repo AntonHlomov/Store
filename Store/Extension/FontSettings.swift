@@ -68,8 +68,6 @@ extension UITextField{
 extension UITextField {
     // коррекция курсора для смены режимов видимости пароля
     func togglePasswordVisibility() {
-        isSecureTextEntry = !isSecureTextEntry
-
         if let existingText = text, isSecureTextEntry {
             /* When toggling to secure text, all text will be purged if the user
              continues typing unless we intervene. This is prevented by first
@@ -80,7 +78,6 @@ extension UITextField {
                 replace(textRange, withText: existingText)
             }
         }
-
         /* Reset the selected text range since the cursor can end up in the wrong
          position after a toggle because the text might vary in width */
         if let existingSelectedTextRange = selectedTextRange {
