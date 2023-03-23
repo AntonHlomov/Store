@@ -105,7 +105,10 @@ class SignInPage: UIViewController {
         else{
             self.signIn.isEnabled = false
             signIn.alpha = 0.8
-            print("ошибка валидации email")
+           // print("ошибка валидации email")
+            let userInformation = [NSLocalizedDescriptionKey: "Validation email error."]
+            let error = NSError(domain: "StoreDomain", code: 408, userInfo:userInformation)
+            failure(error: error)
             return
         }
         formValidation()
@@ -158,6 +161,7 @@ class SignInPage: UIViewController {
 }
 extension SignInPage: SignInProtocol{
     func failure(error: Error) {
-     print("SignIn error")
+        let error = "\(error.localizedDescription)"
+        print(error)
     }
 }

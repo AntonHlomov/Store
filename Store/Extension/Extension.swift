@@ -1,5 +1,5 @@
 //
-//  FontSettings.swift
+//  Extension.swift
 //  Store
 //
 //  Created by Anton Khlomov on 21/03/2023.
@@ -8,9 +8,9 @@
 import Foundation
 import UIKit
 
+
 extension UIImageView {
     class func logoImage (image: UIImage) -> UIImageView{
-  //    let iv = UIImageView(image: #imageLiteral(resourceName: "icons8-булавка-для-карты-24").withRenderingMode(.alwaysOriginal))
         let iv = UIImageView(image: image)
         iv.backgroundColor = .clear
         iv.contentMode = .scaleAspectFit
@@ -57,7 +57,7 @@ extension UITextField{
         tf.attributedPlaceholder = NSAttributedString(string: title, attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray,
             .paragraphStyle: paragraphStyle])
         tf.layer.cornerRadius = 18
-        tf.font = UIFont .systemFont(ofSize: 16)
+        tf.font = UIFont .systemFont(ofSize: 14)
         tf.textColor = UIColor.appColor(.BalackStore)
         tf.isSecureTextEntry = hideText         // скрытие пороля
         tf.isEnabled = enabled
@@ -73,7 +73,6 @@ extension UITextField {
              continues typing unless we intervene. This is prevented by first
              deleting the existing text and then recovering the original text. */
             deleteBackward()
-
             if let textRange = textRange(from: beginningOfDocument, to: endOfDocument) {
                 replace(textRange, withText: existingText)
             }

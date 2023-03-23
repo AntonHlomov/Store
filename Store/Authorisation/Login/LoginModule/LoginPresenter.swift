@@ -15,6 +15,7 @@ protocol LoginPresenterProtocol: AnyObject{
     
     init(view: LoginProtocol, networkService: NetworkLayerProtocol, router: RouterProtocol)
     func setLoginData()
+    func validationSignInData(firstName:String,password:String)
 }
 
 class LoginPresenter: LoginPresenterProtocol{
@@ -29,4 +30,18 @@ class LoginPresenter: LoginPresenterProtocol{
         self.networkService = networkService
     }
     func setLoginData(){}
+    func goToMainPage(){
+        self.router?.initalMainTabControler(user: nil)
+    }
+    func validationSignInData(firstName:String,password:String){
+        // validation user data in coredata (locol)
+        var validationUser = true // validationUser принимает значение после запроса в локальной хранилище
+        if validationUser{
+            goToMainPage()
+        }else{
+            let userInformation = [NSLocalizedDescriptionKey: "User not found."]
+            let error = NSError(domain: "StoreDomain", code: 401, userInfo:userInformation)
+            self.view?.failure(error: error )
+        }
+    }
 }

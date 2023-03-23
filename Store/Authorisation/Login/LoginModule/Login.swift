@@ -52,15 +52,26 @@ class Login: UIViewController {
     fileprivate func handlers(){
         firstName.addTarget(self, action: #selector(formValidation), for: .editingChanged )
         password.addTarget(self, action: #selector(formValidation), for: .editingChanged)
-        login.addTarget(self, action: #selector(goToMainPage), for: .touchUpInside)
+        login.addTarget(self, action: #selector(pressLogin), for: .touchUpInside)
         eye.addTarget(self, action: #selector(iconAction), for: .touchUpInside)
         login.alpha = 0.8
     }
     @objc fileprivate func formValidation(){
-        
+        guard
+            firstName.hasText,
+            password.hasText
+        else {
+            self.login.isEnabled = false
+            login.alpha = 0.8
+            return
+        }
+        login.isEnabled = true
+        login.alpha = 1
     }
-    @objc fileprivate func goToMainPage(){
-        
+    @objc fileprivate func pressLogin(){
+        guard let name = firstName.text else{return}
+        guard let password = password.text else{return}
+        presenter.validationSignInData(firstName: name, password: password)
     }
     @objc func iconAction() {
         if password.isSecureTextEntry {
@@ -109,6 +120,7 @@ class Login: UIViewController {
 }
 extension Login: LoginProtocol{
     func failure(error: Error) {
-     print("Login error")
+    let error = "\(error.localizedDescription)"
+    print(error)
     }
 }

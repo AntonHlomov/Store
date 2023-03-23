@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8A72101A29CA08AE0010398B /* FontSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A72101929CA08AE0010398B /* FontSettings.swift */; };
+		8A72101A29CA08AE0010398B /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A72101929CA08AE0010398B /* Extension.swift */; };
+		8A72101D29CCC0070010398B /* SecureStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A72101C29CCC0070010398B /* SecureStorage.swift */; };
 		8AB8AFB129C469E100E66F05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB8AFB029C469E100E66F05 /* AppDelegate.swift */; };
 		8AB8AFB329C469E100E66F05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB8AFB229C469E100E66F05 /* SceneDelegate.swift */; };
 		8AB8AFBB29C469E100E66F05 /* Store.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8AB8AFB929C469E100E66F05 /* Store.xcdatamodeld */; };
@@ -40,7 +41,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8A72101929CA08AE0010398B /* FontSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSettings.swift; sourceTree = "<group>"; };
+		8A72101929CA08AE0010398B /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		8A72101C29CCC0070010398B /* SecureStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureStorage.swift; sourceTree = "<group>"; };
 		8AB8AFAD29C469E100E66F05 /* Store.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Store.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AB8AFB029C469E100E66F05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AB8AFB229C469E100E66F05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +87,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A72101B29CCBFF50010398B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				8A72101C29CCC0070010398B /* SecureStorage.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		8AB8AFA429C469E100E66F05 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +114,7 @@
 		8AB8AFAF29C469E100E66F05 /* Store */ = {
 			isa = PBXGroup;
 			children = (
+				8A72101B29CCBFF50010398B /* Data */,
 				8AB8AFC729C46E2A00E66F05 /* Builder */,
 				8AB8AFC829C46E4A00E66F05 /* Router */,
 				8AB8AFC929C46E9D00E66F05 /* NetworkLayer  */,
@@ -259,7 +270,7 @@
 				8AB8AFF429C4874F00E66F05 /* Currency.swift */,
 				8AB8B00B29C5387100E66F05 /* Colors.swift */,
 				8AB8B00D29C53DD100E66F05 /* AnchoredConstraintsExtension.swift */,
-				8A72101929CA08AE0010398B /* FontSettings.swift */,
+				8A72101929CA08AE0010398B /* Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -367,6 +378,7 @@
 				8AB8AFD329C4732900E66F05 /* SignInPage.swift in Sources */,
 				8AB8B00429C49D2700E66F05 /* MessengerPage.swift in Sources */,
 				8AB8B00029C49CF900E66F05 /* MarketPresenter.swift in Sources */,
+				8A72101D29CCC0070010398B /* SecureStorage.swift in Sources */,
 				8AB8AFEA29C475C100E66F05 /* Page1Presenter.swift in Sources */,
 				8AB8AFB129C469E100E66F05 /* AppDelegate.swift in Sources */,
 				8AB8AFE429C4756E00E66F05 /* SignInPresenter.swift in Sources */,
@@ -378,7 +390,7 @@
 				8AB8AFF129C4775300E66F05 /* Router.swift in Sources */,
 				8AB8B00629C49D4D00E66F05 /* MessengerPresenter.swift in Sources */,
 				8AB8AFB329C469E100E66F05 /* SceneDelegate.swift in Sources */,
-				8A72101A29CA08AE0010398B /* FontSettings.swift in Sources */,
+				8A72101A29CA08AE0010398B /* Extension.swift in Sources */,
 				8AB8AFBB29C469E100E66F05 /* Store.xcdatamodeld in Sources */,
 				8AB8AFD529C4733900E66F05 /* Login.swift in Sources */,
 				8AB8AFEC29C475D500E66F05 /* Page2Presenter.swift in Sources */,
