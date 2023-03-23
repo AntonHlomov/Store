@@ -14,11 +14,11 @@ protocol SignInProtocol: AnyObject{
 protocol SignInPresenterProtocol: AnyObject{
     
     init(view: SignInProtocol, networkService: NetworkLayerProtocol, router: RouterProtocol)
-    func setSignInData()
-    func goToMainPage()
+    func setDataNewUser(firstName:String,lastName:String,email:String)
     func goToLogin()
     func goToLoginGoogle()
     func goToLoginApple()
+    func validationSignInData(firstName:String,lastName:String,email:String)
 }
 
 class SignInPresenter: SignInPresenterProtocol{
@@ -32,7 +32,16 @@ class SignInPresenter: SignInPresenterProtocol{
         self.router = router
         self.networkService = networkService
     }
-    func setSignInData(){}
+    func validationSignInData(firstName:String,lastName:String,email:String){
+        // проверка есть ли пользователь в базе уже зарегистрированных если да вернуть alert сообщение о этом если нет добавить в базу данных
+        print("-->validationSignInData")
+        setDataNewUser(firstName:firstName,lastName:lastName,email:email)
+        goToMainPage()
+    }
+    func setDataNewUser(firstName:String,lastName:String,email:String){
+        print("-->setDataNewUser")
+    }
+    
     func goToMainPage(){
         self.router?.initalMainTabControler(user: nil)
     }

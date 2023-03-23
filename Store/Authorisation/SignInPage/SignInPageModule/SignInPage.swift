@@ -76,7 +76,17 @@ class SignInPage: UIViewController {
     }
     // MARK: - Actions buttons
     @objc fileprivate func goToMainPage(){
-        presenter.goToMainPage()
+        guard
+            let fName = firstName.text,
+            let lName = lastName.text,
+            let emailText = email.text,
+            isValidEmail(email.text!)
+        else {
+            self.signIn.isEnabled = false
+            signIn.alpha = 0.8
+            return
+        }
+        presenter.validationSignInData(firstName: fName, lastName: lName, email: emailText)
     }
     @objc fileprivate func goToLogin(){
         presenter.goToLogin()
@@ -129,7 +139,7 @@ class SignInPage: UIViewController {
     @objc fileprivate func handleKeyboardSwow(notification: Notification){
         guard let value = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue else {return}
         let keyboardframe = value .cgRectValue    //рамка клавиатуры
-        let bottomSpace = view.frame.height - stacMainBlock.frame.origin.y - stacMainBlock.frame.height        //на сколько должна сдвинуть интерфейс
+        let bottomSpace = view.frame.height - stacMainBlock.frame.origin.y - stacMainBlock.frame.height - signIn.frame.height       //на сколько должна сдвинуть интерфейс
         let difference = keyboardframe.height - bottomSpace
         self.view.transform = CGAffineTransform(translationX: 0, y: -difference - 15)
     }
